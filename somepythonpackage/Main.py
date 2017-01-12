@@ -9,6 +9,6 @@ someObject.printSomething(someObject.name)
 state = State.MISSISSIPPI
 credit_card_type = CreditCardType.VISA
 
-print (state.text)
-print (state.abbreviation)
-print (credit_card_type.abbreviation)
+print(state.text)
+print(state.abbreviation)
+print(credit_card_type.abbreviation)
