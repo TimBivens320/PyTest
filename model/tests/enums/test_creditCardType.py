@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from objectmodel.enums.CreditCardType import CreditCardType
+from model.enums.CreditCardType import CreditCardType
 
 
 class TestCreditCardType(TestCase):

@@ -1,7 +1,7 @@
 from SpecificFile import SpecificFile
-from logic.CreditCardValidation.CreditCardValidatorFactory import CreditCardValidatorFactory
-from objectmodel.enums.CreditCardType import CreditCardType
-from objectmodel.enums.State import State
+from logic.credit_card_validation.CreditCardValidatorFactory import CreditCardValidatorFactory
+from model.enums.CreditCardType import CreditCardType
+from model.enums.State import State
 
 someObject = SpecificFile("dummy")
 

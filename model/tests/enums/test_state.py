@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from objectmodel.enums.State import State
+from model.enums.State import State
 
 
 class TestState(TestCase):

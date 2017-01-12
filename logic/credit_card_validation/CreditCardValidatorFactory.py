@@ -1,6 +1,6 @@
-from logic.CreditCardValidation.Validators.MasterCardValidator import MasterCardValidator
-from logic.CreditCardValidation.Validators.VisaValidator import VisaValidator
-from objectmodel.enums.CreditCardType import CreditCardType
+from logic.credit_card_validation.validators.MasterCardValidator import MasterCardValidator
+from logic.credit_card_validation.validators.VisaValidator import VisaValidator
+from model.enums.CreditCardType import CreditCardType
 
 
 class CreditCardValidatorFactory(object):
