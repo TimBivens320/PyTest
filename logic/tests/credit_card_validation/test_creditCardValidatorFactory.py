@@ -9,13 +9,13 @@ from model.enums.CreditCardType import CreditCardType
 
 class TestCreditCardValidatorFactory(TestCase):
     @staticmethod
-    def setup_credit_card(credit_card_type, card_number):
-        return CreditCard(credit_card_type, card_number)
+    def setup_credit_card(credit_card_type, card_number, expiration_date, cardholder_name, security_code):
+        return CreditCard(credit_card_type, card_number, expiration_date, cardholder_name, security_code)
 
     def test_visa(self):
-        credit_card = self.setup_credit_card(CreditCardType.VISA, None)
+        credit_card = self.setup_credit_card(CreditCardType.VISA, None, None, None, None)
         self.assertIs(VisaValidator, CreditCardValidatorFactory.get(credit_card))
 
     def test_mastercard(self):
-        credit_card = self.setup_credit_card(CreditCardType.MASTERCARD, None)
+        credit_card = self.setup_credit_card(CreditCardType.MASTERCARD, None, None, None, None)
         self.assertIs(MasterCardValidator, CreditCardValidatorFactory.get(credit_card))
